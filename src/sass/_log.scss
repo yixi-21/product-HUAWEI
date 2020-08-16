@@ -1,0 +1,61 @@
+
+// 注册登录头部
+.top-wrap{
+    @include size($wrap,48px);
+    background: #F2F2F2;
+    .top{
+        @include size($inside,48px);
+        margin: auto;
+        img{
+            float: left;
+            margin: 12px 13px 0 4px;
+        }
+        h3{
+            @include size(84px,20px);
+            float: left;
+            margin: 15px 0 0 8px;
+            padding-left: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #191919;
+            border-left: 1px solid #C6C6C6;
+        }
+    }
+}
+
+
+// 注册登录底部
+.foot-wrap{
+    @include size($wrap,110px);
+    background: #F2F2F2;
+    .foot{
+        @include size(560px,20px);
+        margin: auto;
+        padding-top: 40px;
+        li{
+            height: 20px;
+            line-height: 20px;
+            float: left;
+            font-size: 14px;
+            margin: 0 10px;
+            position: relative;
+        }
+        li::before{
+            content: "";
+            @include size(1px,20px);
+            display: block;
+            @include position(0px,-9px);
+            background: #E1D9D9;
+        }
+        li:nth-child(1):before{
+            width: 0;
+        }
+    }
+    p{
+        @include size(756px,20px);
+        line-height: 20px;
+        font-size: 14px;
+        color: #C7C7C7;
+        margin: 8px auto 0;
+    }
+}

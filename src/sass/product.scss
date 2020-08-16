@@ -1,0 +1,146 @@
+@import "style";
+@import "publish";
+
+
+// 商品列表
+.product-wrap{
+    width: $wrap;
+    min-height: 1788px;
+    background: #F5F5F5;
+    .product{
+        width: $inside;
+        min-height: 1788px;
+        margin: auto;
+        h3{
+            @include size($inside,48px);
+            line-height: 48px;
+            a{
+                color: #666;
+                font-family: "宋体 微软雅黑";
+                margin: 0 10px;
+            }
+            a:nth-child(1){
+                margin-left: 0;
+            }
+        }
+        .layout{
+            @include size(1150px,176px);
+            background: #fff;
+            padding: 0 25px;
+            margin-bottom: 20px;
+            li{
+                @include size(1150px,34px);
+                border-bottom: 1px solid #EAEAEA;
+                span{
+                    display: block;
+                    float: left;
+                    @include size(106px,34px);
+                    line-height: 34px;
+                    color: #666;
+                }
+                b{
+                    float: left;
+                    line-height: 34px;
+                    padding-left: 22px;
+                    margin-right: 40px;
+                    color: #333;
+                }
+                b:hover{
+                    color: #CD1674;
+                    cursor: pointer;
+                }
+            }
+            li:last-child{
+                border: 0;
+                span{
+                    width: 96px;
+                }
+            }
+        }
+        .channel-list{
+            position: relative;
+            z-index: 0;
+            min-height: 1523px;
+            >li{
+                @include size(215px,352px);
+                float: left;
+                background: #fff;
+                margin: 0 10px 10px 0;
+                padding-left: 15px;
+                position: relative;
+                // z-index: 1;
+                img{
+                    // position: relative;
+                    // z-index: 1;
+                    @include size(180px,180px);
+                    margin: 30px 0 0 10px;
+                }
+                b{
+                    display: block;
+                    @include size(200px,32px);
+                    line-height: 32px;
+                    color: #333;
+                    font-size: 14px;
+                }
+                strong{
+                    display: block;
+                    @include size(200px,32px);
+                    color: #CA141D;
+                    font-size: 18px;
+                    position: relative;
+                }
+                strong:before{
+                    content: "多款可选";
+                    @include size(60px,16px);
+                    display: block;
+                    font-size: 12px;
+                    text-align: center;
+                    border: 1px solid #68BEFF;
+                    border-radius: 10px;
+                    @include position(5px,80px);
+                    color: #68BEFF;
+                }
+                em{
+                    color: #CA141D;
+                    border: 1px solid #CA141D;
+                    margin-right: 4px;
+                    padding: 0 5px;
+                }
+                p{
+                    margin-top: 8px;
+                    u{
+                        color: #999;
+                        margin-right: 8px;
+                    }
+                }
+                h5{
+                    // position: relative;
+                    // z-index: 1;
+                    height: 18px;
+                    background: #68BEFF;
+                    color: #fff;
+                    padding: 0 8px;
+                    @include position(0px,100px);
+                    border-radius: 0 0 5px 5px;
+                }
+                h4{
+                    height: 18px;
+                    background: #FF6A6E;
+                    color: #fff;
+                    padding: 0 8px;
+                    @include position(0px,100px);
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+            li:hover{
+                transition: ease-in 0.3s;
+                transform: translateY(-3px);
+                box-shadow: 0 0 28px rgba(0,0,0,0.05);
+            }
+            li:nth-child(5){
+                margin-right: 0;
+            }
+        }
+    }
+}
+

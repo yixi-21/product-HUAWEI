@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <!-- <link rel="stylesheet" href="../../dist/css/log.min.css"> -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../dist/css/login.min.css">
+    <script src="../lib/jquery-1.12.4.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- top-start -->
+    <div class="top-wrap">
+        <div class="top">
+            <img src="../img/login/HUAWEI.svg" alt="">
+            <h3>华为商城</h3>
+        </div>
+    </div>
+
+    <!-- main-start -->
+    <div class="register-wrap">
+        <div class="register">
+            <h3>华为账号登录</h3>
+            <span>
+                <b id="rLeft">
+                    <strong><img src="../img/login/RQ.png" alt=""></strong>
+                    <strong>若您使用华为手机，请进入&nbsp;&nbsp;“设置”&nbsp;&nbsp;>&nbsp;&nbsp;“华为账号”&nbsp;&nbsp;扫码登录。</strong>
+                </b>
+                <b id="rMiddle"></b>
+                <b id="rRight">
+                    <input type="text" placeholder="手机号/邮件地址/华为号" class="phone email user">
+                    <input type="passwrod" placeholder="密码" class="pwd">
+                    <a href="javascript:;">短信验证码登录</a>
+                    <button class="log">登录</button>
+                    <strong>
+                        <a href="../html/register.html">注册</a>
+                        <a href="javascript:;">忘记密码</a>
+                        <a href="javascript:;">更多</a>
+                    </strong>
+                    <p>
+                        <i class="iconfont icon-QQ"></i>
+                        <i class="iconfont icon-Alipay"></i>
+                        <i class="iconfont icon-weixin1"></i>
+                    </p>
+                </b>
+            </span>
+        </div>
+    </div>
+
+    <!-- foot-start -->
+    <div class="foot-wrap">
+        <ul class="foot">
+            <li><a href="javascript:;">华为账号与云空间用户协议</a></li>
+            <li><a href="javascript:;">关于华为账号与云空间隐私的声明</a></li>
+            <li><a href="javascript:;">常见问题</a></li>
+            <li><a href="javascript:;">Cookie</a></li>
+        </ul>
+        <p>
+            Cpoyright &copy; 2011-2020 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20020200号 | 苏ICP备09062682号-9
+        </p>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script>
+        new Login();
+    </script>
+</body>
+</html>

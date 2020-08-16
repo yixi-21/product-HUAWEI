@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../dist/css/register.min.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../lib/jquery-1.12.4.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- top-start -->
+    <div class="top-wrap">
+        <div class="top">
+            <img src="../img/login/HUAWEI.svg" alt="">
+            <h3>华为商城</h3>
+        </div>
+    </div>
+
+    <!-- main-start -->
+    <div class="register-wrap">
+        <div class="register1">
+            <ul>
+                <li class="reg_phone"><a href="javascript:;"><i class="iconfont icon-shouji-copy-copy"></i>手机号注册</a></li>
+                <li class="reg_email"><a href="javascript:;"><i class="iconfont icon-youxiang"></i>邮箱地址注册</a></li>
+            </ul>
+ 
+            <div class="register2 reg">
+                <span>
+                    <h3>华为账号注册</h3>
+                    <b>已有帐号，<a href="./login.html">去登录></a></b>
+                </span>
+                <span>
+                    <input type="text" placeholder="请输入手机号" id="phone"><strong></strong>
+                </span>
+                <span>
+                    <input type="text" placeholder="验证码" id="code">
+                    <b id="getCode">获取验证码</b>
+                    <strong class="cod codelook"></strong>
+                    <strong></strong>
+                </span>
+                <span>
+                    <input type="password" placeholder="密码" class="psw">
+                    <strong></strong>
+                </span>
+                <span>
+                    <input type="password" placeholder="确认密码" class="sure">
+                    <strong></strong>
+                </span>
+                <button id="sign">注册</button>
+            </div>
+            <div class="register2 reg1">
+                <span>
+                    <h3>华为账号注册</h3>
+                    <b>已有帐号，<a href="./login.html">去登录></a></b>
+                </span>
+                <span>
+                    <input type="text" placeholder="请输入邮箱地址" id="email"><strong></strong>
+                </span>
+                <span>
+                    <input type="text" placeholder="验证码" id="code2">
+                    <b id="getCode2">获取验证码</b>
+                    <strong class="cod codelook2"></strong>
+                    <strong></strong>
+                </span>
+                <span>
+                    <input type="password" placeholder="密码" class="psw2">
+                    <strong></strong>
+                </span>
+                <span>
+                    <input type="password" placeholder="确认密码" class="sure2">
+                    <strong></strong>
+                </span>
+                <button id="reg">注册</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- foot-start -->
+    <div class="foot-wrap">
+        <ul class="foot">
+            <li><a href="javascript:;">华为账号与云空间用户协议</a></li>
+            <li><a href="javascript:;">关于华为账号与云空间隐私的声明</a></li>
+            <li><a href="javascript:;">常见问题</a></li>
+            <li><a href="javascript:;">Cookie</a></li>
+        </ul>
+        <p style="width:207px;">
+            华为账号 版权所有 &copy; 2011-2020
+        </p>
+    </div>
+
+    <script src="../js/register.js"></script>
+    <script>
+        new Register();
+    </script>
+</body>
+</html>

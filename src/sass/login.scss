@@ -1,0 +1,132 @@
+@import "style";
+// 导入头部和底部样式
+@import "log";
+
+
+
+// main
+.register-wrap{
+    @include size($wrap,700px);
+    .register{
+        @include size($inside,700px);
+        margin: auto;
+        h3{
+            @include size($inside,221px);
+            line-height: 221px;
+            color: #191919;
+            font-size: 32px;
+            text-align: center;
+        }
+        span{
+            display: block;
+            @include size(841px,422px);
+            margin: auto;
+            b{
+                float: left;
+                display: block;
+            }
+            #rLeft{
+                @include size(360px,273px);
+                strong:nth-child(1){
+                    display: block;
+                    @include size(160px,160px);
+                    background: #F7F7F7;
+                    padding: 20px;
+                    margin: auto;
+                }
+                strong:nth-child(2){
+                    display: block;
+                    @include size(360px,21px);
+                    color: #838383;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+            }
+            #rMiddle{
+                @include size(1px,300px);
+                margin: 0 60px;
+                background: #E5E5E5;
+            }
+            #rRight{
+                @include size(360px,422px);
+                input{
+                    @include size(328px,48px);
+                    border-radius: 8px;
+                    padding: 0 16px;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    color: #838383;
+                    background: #F2F2F2;
+                }
+                a{
+                    color: #007DFF;
+                    font-size: 16px;
+                }
+                button{
+                    @include size(360px,47px);
+                    line-height: 47px;
+                    background: #EBA7AA;
+                    // background: #CA141D;
+                    margin-top: 40px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #fff;
+                    border: 0;
+                    border-radius: 10px;
+                    outline: none;
+                }
+                strong{
+                    display: block;
+                    @include size(220px,60px);
+                    line-height: 100px;
+                    margin: auto;
+                    a{
+                        display: block;
+                        height: 50px;
+                        margin: 0 15px;
+                        float: left;
+                        position: relative;
+                    }
+                    a::before{
+                        content: "";
+                        @include size(1px,19px);
+                        display: block;
+                        @include position(40px,-15px);
+                        background: #E1D9D9;
+                    }
+                    a:first-child:before{
+                        width: 0;
+                    }
+                }
+                p{
+                    @include size(280px,108px);
+                    margin: auto;
+                    i{
+                        display: block;
+                        float: left;
+                        @include size(40px,40px);
+                        background: #F7F7F7;
+                        font-size: 23px;
+                        color: #313131;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        margin: 35px 25px;
+                    }
+                    i:hover{
+                        color: #fff;
+                    }
+                    i:nth-child(1):hover{
+                        background: #506A7E;
+                    }
+                    i:nth-child(2):hover{
+                        background: #00AAEF;
+                    }
+                    i:nth-child(3):hover{
+                        background: #47CC47;
+                    }
+                }
+            }
+        }
+    }
+}

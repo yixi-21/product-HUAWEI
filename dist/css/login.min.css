@@ -1,0 +1,294 @@
+@charset "UTF-8";
+html, body, div, p, ol, ul, li, h1, h2, h3, h4, h5, h6, p, table, th, td, dl, dt, dd, form, fieldset, legend, input，textarea, select, option, label, header, main, footer, section, aside, nav, figure, figcaption, hgroup, article {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+i, em {
+  font-style: normal;
+}
+
+a, u, ins {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+input, fieldset {
+  outline: none;
+  border: 0;
+}
+
+.clear_fix:after {
+  content: '.';
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.top-wrap {
+  width: 100%;
+  height: 48px;
+  background: #F2F2F2;
+}
+
+.top-wrap .top {
+  width: 1200px;
+  height: 48px;
+  margin: auto;
+}
+
+.top-wrap .top img {
+  float: left;
+  margin: 12px 13px 0 4px;
+}
+
+.top-wrap .top h3 {
+  width: 84px;
+  height: 20px;
+  float: left;
+  margin: 15px 0 0 8px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #191919;
+  border-left: 1px solid #C6C6C6;
+}
+
+.foot-wrap {
+  width: 100%;
+  height: 110px;
+  background: #F2F2F2;
+}
+
+.foot-wrap .foot {
+  width: 560px;
+  height: 20px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.foot-wrap .foot li {
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  font-size: 14px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.foot-wrap .foot li::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  display: block;
+  top: 0px;
+  left: -9px;
+  position: absolute;
+  background: #E1D9D9;
+}
+
+.foot-wrap .foot li:nth-child(1):before {
+  width: 0;
+}
+
+.foot-wrap p {
+  width: 756px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #C7C7C7;
+  margin: 8px auto 0;
+}
+
+.register-wrap {
+  width: 100%;
+  height: 700px;
+}
+
+.register-wrap .register {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+}
+
+.register-wrap .register h3 {
+  width: 1200px;
+  height: 221px;
+  line-height: 221px;
+  color: #191919;
+  font-size: 32px;
+  text-align: center;
+}
+
+.register-wrap .register span {
+  display: block;
+  width: 841px;
+  height: 422px;
+  margin: auto;
+}
+
+.register-wrap .register span b {
+  float: left;
+  display: block;
+}
+
+.register-wrap .register span #rLeft {
+  width: 360px;
+  height: 273px;
+}
+
+.register-wrap .register span #rLeft strong:nth-child(1) {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #F7F7F7;
+  padding: 20px;
+  margin: auto;
+}
+
+.register-wrap .register span #rLeft strong:nth-child(2) {
+  display: block;
+  width: 360px;
+  height: 21px;
+  color: #838383;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.register-wrap .register span #rMiddle {
+  width: 1px;
+  height: 300px;
+  margin: 0 60px;
+  background: #E5E5E5;
+}
+
+.register-wrap .register span #rRight {
+  width: 360px;
+  height: 422px;
+}
+
+.register-wrap .register span #rRight input {
+  width: 328px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #838383;
+  background: #F2F2F2;
+}
+
+.register-wrap .register span #rRight a {
+  color: #007DFF;
+  font-size: 16px;
+}
+
+.register-wrap .register span #rRight button {
+  width: 360px;
+  height: 47px;
+  line-height: 47px;
+  background: #EBA7AA;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+.register-wrap .register span #rRight strong {
+  display: block;
+  width: 220px;
+  height: 60px;
+  line-height: 100px;
+  margin: auto;
+}
+
+.register-wrap .register span #rRight strong a {
+  display: block;
+  height: 50px;
+  margin: 0 15px;
+  float: left;
+  position: relative;
+}
+
+.register-wrap .register span #rRight strong a::before {
+  content: "";
+  width: 1px;
+  height: 19px;
+  display: block;
+  top: 40px;
+  left: -15px;
+  position: absolute;
+  background: #E1D9D9;
+}
+
+.register-wrap .register span #rRight strong a:first-child:before {
+  width: 0;
+}
+
+.register-wrap .register span #rRight p {
+  width: 280px;
+  height: 108px;
+  margin: auto;
+}
+
+.register-wrap .register span #rRight p i {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #F7F7F7;
+  font-size: 23px;
+  color: #313131;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 35px 25px;
+}
+
+.register-wrap .register span #rRight p i:hover {
+  color: #fff;
+}
+
+.register-wrap .register span #rRight p i:nth-child(1):hover {
+  background: #506A7E;
+}
+
+.register-wrap .register span #rRight p i:nth-child(2):hover {
+  background: #00AAEF;
+}
+
+.register-wrap .register span #rRight p i:nth-child(3):hover {
+  background: #47CC47;
+}

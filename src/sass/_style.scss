@@ -1,0 +1,62 @@
+html,body,div,p,ol,ul,li,h1,h2,h3,h4,h5,h6,p,table,th,td,dl,dt,dd,form,fieldset,legend,input，textarea,select,option,label,header,main,footer,section,aside,nav,figure,figcaption,hgroup,article{margin:0;padding:0;}
+body{
+	font-size:12px;
+    // font-family: '微软雅黑';
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    
+}
+ul,ol,li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	font-weight: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+a,u,ins{
+	text-decoration: none;
+	color: #000;
+}
+img{
+	border:0;
+	display:block;
+}
+input,fieldset{
+	outline: none;
+	border:0;
+}
+.clear_fix:after{
+	content:'.';
+	clear:both;
+	height:0;
+	overflow:hidden;
+	display:block;
+	visibility: hidden;
+}
+.clear_fix{
+	zoom:1; //用来兼容IE6、7 的高度自适应的问题的；
+}
+
+$wrap:100%;
+$inside:1200px;
+
+@mixin size($width,$height){
+    width : $width;
+    height : $height;
+}
+@mixin msize($width,$height){
+    min-width : $width;
+    height : $height;
+}
+
+@mixin position($top,$left) {
+	top: $top;
+	left: $left;
+	position: absolute;
+}
+

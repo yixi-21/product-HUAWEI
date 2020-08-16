@@ -1,0 +1,125 @@
+@import "style";
+// 导入头部和底部样式
+@import "log";
+
+
+// main
+.register-wrap{
+    @include size($wrap,700px);
+    .register1{
+        @include size($inside,700px);
+        margin: auto;
+        position: relative;
+        ul{
+            @include size(272px,100px);
+            padding-top: 30px;
+            @include position(0px,0px);
+            li{
+                border-radius: 10px;
+                a{
+                    display: block;
+                    @include size(272px,50px);
+                    line-height: 50px;
+                    text-indent: 32px;
+                    border-radius: 10px;
+                    // background: #F2F2F2;
+                    font-size: 14px;
+                    color: #191919;
+                    i{
+                        margin: 0 8px;
+                    }
+                }
+            }
+            li a:hover{
+                background: #E5F2FF;
+            }
+        }
+        .register2{
+            @include size(440px,728px);
+            padding-top: 60px;
+            font-size: 16px;
+            margin: auto;
+            span:nth-child(1){
+                display: block;
+                @include size(440,72px);
+                text-align: center;
+                margin: 10px 0 60px;
+                color: #191919;
+                h3{
+                    font-size: 32px;
+                    margin-bottom: 5px;
+                }
+                b{
+                    font-size: 18px;
+                    a{
+                        color: #047FFF;
+                    }
+                }
+            }
+            span{
+                display: block;
+                @include size(440px,58px);
+                margin-bottom: 20px;
+                input{
+                    @include size(408px,58px);
+                    padding: 0 16px;
+                    border-radius: 8px;
+                    background: #F2F2F2;
+                    font-size: 16px;
+                }
+            }
+            span:nth-child(3){
+                display: block;
+                @include size(440px,58px);
+                position: relative;
+                input{
+                    float: left;
+                    @include size(313px,58px);
+                    padding: 0 16px;
+                    border-radius: 8px 0 0 8px;
+                    background: #F2F2F2;
+                }
+                b{
+                    float: left;
+                    display: block;
+                    @include size(95px,58px);
+                    line-height: 58px;
+                    text-align: center;
+                    // color: #007DFF;
+                    color: #97C6F7; 
+                    border-radius:  0 8px 8px 0;
+                    background: #F2F2F2;
+                }
+                .cod{
+                    display: none;
+                    @include size(120px,58px);
+                    line-height: 58px;
+                    @include position(0px,440px);
+                    background: #F2F2F2;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    border-radius: 10px;
+                }
+            }
+            button{
+                @include size(310px,50px);
+                background: #9FCEFF;
+                // background: #007DFF;
+                border-radius: 8px;
+                border: 0;
+                color: #fff;
+                font-size: 18px;
+                margin: 50px 0 0 65px;
+            }
+        }
+        .reg1{
+            display: none;
+        }
+    }
+}
+
+
+
+
